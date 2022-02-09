@@ -46,7 +46,7 @@ namespace PlayGame
 
             //change the countdownLabel text to say "Go!" and change screen background to green
             countdownLabel.Text = "Go!!!";
-            BackColor = Color.DarkGreen;
+            BackColor = Color.Green;
         }
     }
 }
