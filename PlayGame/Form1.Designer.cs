@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.playGameButton = new System.Windows.Forms.Button();
             this.countdownLabel = new System.Windows.Forms.Label();
+            this.goLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // playGameButton
@@ -39,7 +40,7 @@
             this.playGameButton.Cursor = System.Windows.Forms.Cursors.Default;
             this.playGameButton.Font = new System.Drawing.Font("Palatino Linotype", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.playGameButton.ForeColor = System.Drawing.Color.White;
-            this.playGameButton.Location = new System.Drawing.Point(317, 164);
+            this.playGameButton.Location = new System.Drawing.Point(218, 136);
             this.playGameButton.Name = "playGameButton";
             this.playGameButton.Size = new System.Drawing.Size(192, 65);
             this.playGameButton.TabIndex = 1;
@@ -53,18 +54,32 @@
             this.countdownLabel.BackColor = System.Drawing.Color.Transparent;
             this.countdownLabel.Font = new System.Drawing.Font("Palatino Linotype", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.countdownLabel.ForeColor = System.Drawing.Color.White;
-            this.countdownLabel.Location = new System.Drawing.Point(271, 206);
+            this.countdownLabel.Location = new System.Drawing.Point(172, 178);
             this.countdownLabel.Name = "countdownLabel";
             this.countdownLabel.Size = new System.Drawing.Size(0, 44);
             this.countdownLabel.TabIndex = 3;
             this.countdownLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // goLabel
+            // 
+            this.goLabel.AutoSize = true;
+            this.goLabel.BackColor = System.Drawing.Color.Transparent;
+            this.goLabel.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.goLabel.ForeColor = System.Drawing.Color.White;
+            this.goLabel.Location = new System.Drawing.Point(279, 160);
+            this.goLabel.Name = "goLabel";
+            this.goLabel.Size = new System.Drawing.Size(65, 28);
+            this.goLabel.TabIndex = 4;
+            this.goLabel.Text = "Go!!!!";
+            this.goLabel.Visible = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(823, 445);
+            this.ClientSize = new System.Drawing.Size(632, 348);
+            this.Controls.Add(this.goLabel);
             this.Controls.Add(this.countdownLabel);
             this.Controls.Add(this.playGameButton);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -79,6 +94,7 @@
         #endregion
         private System.Windows.Forms.Button playGameButton;
         private System.Windows.Forms.Label countdownLabel;
+        private System.Windows.Forms.Label goLabel;
     }
 }
 

@@ -44,8 +44,9 @@ namespace PlayGame
             Refresh();
             Thread.Sleep(1000);
 
-            //change the countdownLabel text to say "Go!" and change screen background to green
-            countdownLabel.Text = "Go!!!";
+            //make the countdown label invisible, make the go label visible and change screen background to green
+            countdownLabel.Visible = false;
+            goLabel.Visible = true;
             BackColor = Color.Green;
         }
     }
